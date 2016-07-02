@@ -7,38 +7,47 @@
       <h1>The Official Lee&trade; Guessing Game</h1>
       <p>This is gonna be something special.</p>
       <p>Get ready!</p>
-
       <script type="text/javascript">
 
+         console.log("Starting script. Asking user for information.");
          var userName = prompt("Please tell me your name.");
 
          var guess1 = prompt(userName + ", first question: Did I grow up in Boston?");
-         if (guess1 == "No") {
+         if (guess1.toUpperCase() == "NO") {
+            console.log("User guess was correct.");
             alert("That's right, " + userName + "! I like Boston. \nBut I grew up in Claremont, California. \nThe other side of the country.");
          } else {
+            console.log("User guess was incorrect.");
             alert("No, sorry, " + userName + ". I grew up in Claremont, California. \nThe City of Trees and PhDs!");
          }
 
          var guess2 = prompt("Second question: Did I attend UCLA?");
-         if (guess2 == "Yes") {
+         if (guess2.toUpperCase() == "YES") {
+            console.log("User guess was correct.");
             alert("Cool, " + userName + ". You know me better than most.");
          } else {
+            console.log("User guess was incorrect.");
             alert("Sorry, " + userName + ". That's incorrect. \nI studied accounting at UCLA. Fascinating, huh?");
          }
 
          var guess3 = prompt("Third question: Do I enjoy Korean food?");
-         if (guess3 == "Yes") {
+         if (guess3.toUpperCase() == "YES") {
+            console.log("User guess was correct.");
             alert("Damn straight, " + userName + "! I'd be happy eating \nKorean food morning, noon and night.");
          } else {
+            console.log("User guess was incorrect.");
             alert("Boo! C'mon, " + userName + ", I thought we wuz friends! \nNo galbi for you!");
          }
 
          var guess4 = prompt("Final question: How many years did I live in Los Angeles?");
          if (guess4 < 8 ) {
+            console.log("Number entered by user is too low.");
             alert(userName + ", no, I spent more time there than that. \n8 years to be exact.");
          } else if (guess4 > 8 ) {
+            console.log("Number entered by user is too high.");
             alert(userName + ", no, I spent fewer years there than that. \n8 years to be exact.");
          } else {
+            console.log("Number entered by user is just right.");
             alert(userName + "! You got it right. Wow! You know me like your own shadow (kinda creepy).");
          }
 

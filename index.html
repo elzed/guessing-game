@@ -13,7 +13,7 @@
          var userName = prompt("Please tell me your name.");
 
          var guess1 = prompt(userName + ", first question: Did I grow up in Boston?");
-         if (guess1.toUpperCase() == "NO") {
+         if (guess1.toUpperCase() == "NO" || guess1.toUpperCase() == "N") {
             console.log("User guess was correct.");
             alert("That's right, " + userName + "! I like Boston. \nBut I grew up in Claremont, California. \nThe other side of the country.");
          } else {
@@ -22,7 +22,7 @@
          }
 
          var guess2 = prompt("Second question: Did I attend UCLA?");
-         if (guess2.toUpperCase() == "YES") {
+         if (guess2.toUpperCase() == "YES" || guess2.toUpperCase() == "Y") {
             console.log("User guess was correct.");
             alert("Cool, " + userName + ". You know me better than most.");
          } else {
@@ -31,7 +31,7 @@
          }
 
          var guess3 = prompt("Third question: Do I enjoy Korean food?");
-         if (guess3.toUpperCase() == "YES") {
+         if (guess3.toUpperCase() == "YES" || guess3.toUpperCase() == "Y") {
             console.log("User guess was correct.");
             alert("Damn straight, " + userName + "! I'd be happy eating \nKorean food morning, noon and night.");
          } else {

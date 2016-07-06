@@ -1,4 +1,8 @@
 # guessing-game
 
-Adds validation to accept different forms of input from user (upper, lower, shorthand).  
-Adds a way to track the number of correct answers.  
+Author: Lee Zamastil
+Assignment from Class 03 | Code Fellows 201
+
+Simple game asks four questions of the user. Correct answers are accepted in different forms (uppercase, lowercase, shorthand).
+
+Correct answers are tracked and reported at end of game.

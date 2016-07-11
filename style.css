@@ -12,31 +12,32 @@ body {
 header {
    height: 150px;
    /*background: #dbdbdb;*/
-   background: linear-gradient(to right, #123e87 , #284d8a);
+   background: linear-gradient(to right, #123e87 , #20608C);
    width: 100%;
 }
 
 h1, h2 {
+   font-family: "Alegreya Sans", serif;
    padding: 20px;
    color: #e3e3e3;
    text-align: center;
 }
 
 p {
-   margin: .5em 0 .5em 2em;
+   margin: .5em 0 1em 2em;
    color: #363636;
 }
 
 img {
 
-   max-width: 20%;
+   max-width: 22%;
    border-radius: 50%;
-
    margin-left: 2em;
 }
 
 span {
    font-style: italic;
+   color: #8c1a53;
 }
 
 #finalScore {

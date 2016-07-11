@@ -1,16 +1,17 @@
-/**************************
-**************** Initialize
-**************************/
+/*********************************
+*********************** Initialize
+*********************************/
 
-var counter = 0;
 var response;
+var counter = 0;
 var userName = prompt("Please tell me your name.");
+var msg = document.getElementById("answers");
 
 
 
-/**************************
-***************** Functions
-**************************/
+/*********************************
+************************ Functions
+*********************************/
 
 // All-in-one guess function
 function enterGuess(quest) {
@@ -31,43 +32,41 @@ function showImage(src) {
 
 
 
-/**************************
-** Question, Answer, Images
-**************************/
+/*********************************
+**  Question, Answer, Image, Score
+*********************************/
 
 enterGuess("did I grow up in Claremont, California?");
 if (response === true) {
    showImage("img/claremont-yale-and-second.jpg");
+   msg.innerHTML = "<span>I did grow up in Claremont in eastern Los Angeles County.</span><br />";
+} else {
+   msg.innerHTML = "I did grow up in Claremont in eastern Los Angeles County.<br />";
 }
 
 enterGuess("did I attend UCLA?");
 if (response === true) {
    showImage("img/ucla-and-downtown.jpg");
+   msg.innerHTML += "<span>I did attend UCLA to study accounting and finance.</span><br />";
+} else {
+   msg.innerHTML += "I did attend UCLA to study accounting and finance.<br />";
 }
 
 enterGuess("do I enjoy Korean food?");
 if (response === true) {
    showImage("img/korean-food.jpg");
+   msg.innerHTML += "<span>I do enjoy Korean food whenever I can.</span><br />";
+} else {
+   msg.innerHTML += "I do enjoy Korean food whenever I can.<br />";
 }
 
 enterGuess("how many years did I live in Los Angeles?");
 if (response === true) {
    showImage("img/hollywood-boulevard-at-mccadden-place.jpg");
+   msg.innerHTML += "<span>I lived in Los Angeles for 8 years.</span>";
+} else {
+   msg.innerHTML += "I lived in Los Angeles for 8 years.";
 }
 
-
-
-/**************************
-***** Write response to DOM
-**************************/
-
-// Write the final score into the document
 var score = document.getElementById("finalScore");
 score.innerHTML = "You got " + counter + " answers correct."
-
-// Print the answers to the DOM
-var msg = document.getElementById("answers");
-msg.innerHTML = "I <span>did</span> grow up in Claremont in eastern Los Angeles County.<br />";
-msg.innerHTML += "I <span>did</span> attend UCLA to study accounting and finance.<br />";
-msg.innerHTML += "I <span>do</span> enjoy Korean food whenever I can.<br />";
-msg.innerHTML += "I lived in Los Angeles for 8 years.";

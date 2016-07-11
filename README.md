@@ -3,10 +3,10 @@
 Author: Lee Zamastil
 Assignment from Class 04 | Code Fellows 201
 
-Simple game asks four questions of the user. Correct answers are accepted in different forms (uppercase, lowercase, shorthand).
+Simple game asks four questions of the user. Yes/No answers are accepted in different forms (uppercase, lowercase, shorthand).
 
-Correct answers are tracked and reported at end of game. Answer is styled in red color and written to the document instead of via alert.
+Correct answers are counted and reported at end of game. Correct answers are reported back and styled in disco red and written to the document.
 
-Function added to reuse code during questioning.
+One function asks question and receives response and tracks whether response was correct.
 
-Correct answers printed to the DOM at end of game.
+Another function displays images related to correct answers.

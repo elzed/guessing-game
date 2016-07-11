@@ -10,3 +10,5 @@ Correct answers are counted and reported at end of game. Correct answers are rep
 One function asks question and receives response and tracks whether response was correct.
 
 Another function displays images related to correct answers.
+
+Works most nicely in Firefox. Second choice is Chrome, then Safari.

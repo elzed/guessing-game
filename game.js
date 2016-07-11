@@ -1,19 +1,65 @@
+/**************************
+**************** Initialize
+**************************/
+
 var counter = 0;
+var response;
 var userName = prompt("Please tell me your name.");
+
+
+
+/**************************
+***************** Functions
+**************************/
 
 // All-in-one guess function
 function enterGuess(quest) {
+   response = false;
    var guess = prompt(userName + ", " + quest);
    if (guess.toUpperCase() == "YES" || guess.toUpperCase() == "Y" || guess == 8) {
          counter += 1;
+         response = true;
    }
 }
 
-// Ask a series of questions
+// Display images in the DOM
+function showImage(src) {
+   var img = document.createElement("img")
+   img.src = src;
+   document.body.appendChild(img);
+}
+
+
+
+/**************************
+** Question, Answer, Images
+**************************/
+
 enterGuess("did I grow up in Claremont, California?");
+if (response === true) {
+   showImage("img/claremont-yale-and-second.jpg");
+}
+
 enterGuess("did I attend UCLA?");
+if (response === true) {
+   showImage("img/ucla-and-downtown.jpg");
+}
+
 enterGuess("do I enjoy Korean food?");
-enterGuess("how many years did I live in Los Angeles?")
+if (response === true) {
+   showImage("img/korean-food.jpg");
+}
+
+enterGuess("how many years did I live in Los Angeles?");
+if (response === true) {
+   showImage("img/hollywood-boulevard-at-mccadden-place.jpg");
+}
+
+
+
+/**************************
+***** Write response to DOM
+**************************/
 
 // Write the final score into the document
 var score = document.getElementById("finalScore");
